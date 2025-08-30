@@ -1,10 +1,12 @@
+
 {
   "name": "API-REST",
   "version": "1.1.0",
   "description": "turu",
-  "main": "node index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -13,52 +15,45 @@
   "keywords": [
     "simple",
     "api",
-    "rest",
-    "api"
+    "rest"
   ],
   "author": "Reyganz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/inirey/API-REST/issues"
   },
+  "homepage": "https://github.com/inirey/API-REST#readme",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^1.7.7",
     "base-64": "^1.0.0",
-    "base32": "0.0.6",
-    "chalk": "^4.1.0",
-    "cheerio": "^1.0.0-rc.5",
-    "child_process": "^1.0.2",
-    "facebook-video-link": "^1.0.2",
+    "base32": "^0.0.6",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0",
     "cors": "^2.8.5",
     "tiktok-scraper-without-watermark": "^1.1.2",
-    "path": "^0.12.7",
-    "dotenv": "^8.2.0",
-    "canvacord": "^5.2.1",
-    "canvas": "^2.8.0",
-    "canvas-hikki": "github:ZyxMapLe/canvas-hikki",
-    "emoji-api": "^2.0.0",
-    "express": "^4.17.1",
-    "fbdl-core": "^1.0.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
     "form-data": "^4.0.0",
-    "fs": "0.0.1-security",
-    "genius-lyrics": "^4.2.7",
+    "genius-lyrics": "^4.4.6",
     "instatouch": "^2.3.3",
-    "lodash": "^4.17.20",
-    "moment": "^2.29.1",
-    "mongodb": "^3.6.3",
-    "monk": "^7.3.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "mongodb": "^6.9.0",
+    "monk": "^7.3.4",
     "morgan": "^1.10.0",
-    "needle": "^3.0.0",
-    "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.7",
-    "request": "^2.88.2",
-    "ssl-express-www": "^3.0.7",
-    "skh-api": "^1.0.0",
-    "tiktok-scraper": "^1.4.12",
+    "needle": "^3.3.1",
+    "node-fetch": "^2.7.0",
+    "sharp": "^0.33.5",
+    "ssl-express-www": "^3.0.8",
     "urlencode": "^1.1.0",
-    "skh-api": "2.1.1",
-    "api-rey": "1.1.0",
-    "zrapi": "0.0.6"
+    "skh-api": "^2.1.1",
+    "api-rey": "^1.1.0",
+    "zrapi": "^0.0.6"
   },
-  "homepage": "https://github.com/inirey/API-REST#readme"
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
