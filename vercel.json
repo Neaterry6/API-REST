@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "index.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "installCommand": "apt-get update && apt-get install -y libpixman-1-dev libcairo2-dev libpango1.0-dev && npm install"
+      }
     }
   ],
   "routes": [
