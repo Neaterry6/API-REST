@@ -1,12 +1,18 @@
+FROM node:18
 
-FROM node:16.15.0
-FROM node:18.2.0
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install nodejs -y
+# Install canvas dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libcairo2-dev \
+    libpango1.0-dev \
+    libjpeg-dev \
+    libgif-dev \
+    librsvg2-dev \
+    libpixman-1-dev
 
 WORKDIR /app
-COPY . /app
+COPY package*.json ./
 RUN npm install
-CMD ["node", "index.js"]
-EXPOSE 6892
+COPY . .
+EXPOSE 3000
+CMD ["npm", "start"]
